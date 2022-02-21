@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<!DOCTYPE index PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp Index Version 2.0//EN"
+"http://java.sun.com/products/javahelp/index_2_0.dtd">
+<index version="2.0">
+	<indexitem text="Inicio" target="init"/>
+	<indexitem text="Base de datos">
+		<indexitem text="Visor BD" target="BD_User"/>
+		<indexitem text="Funcionamiento BD" target="BD_Admin"/>
+	</indexitem>
+	<indexitem text="Reserva de habitaciones">
+		<indexitem text="Reserva" target="Rva_Hab"/>
+		<indexitem text="Campo DNI" target="Rva_Hab_DNI"/>
+		<indexitem text="Campo nombre" target="Rva_Hab_Nombre"/>
+		<indexitem text="Campo direccion" target="Rva_Hab_Direccion"/>
+		<indexitem text="Campo localidad" target="Rva_Hab_Localidad"/>
+		<indexitem text="Campo provincia" target="Rva_Hab_Provincia"/>
+		<indexitem text="Campo fecha de llegada" target="Rva_Hab_F_Llegada"/>
+		<indexitem text="Campo fecha de salida" target="Rva_Hab_F_Salida"/>
+		<indexitem text="Campo numero de habitaciones" target="Rva_Hab_Num_Hab"/>
+		<indexitem text="Campo tipo de habitacion" target="Rva_Hab_Tipo_Hab"/>
+		<indexitem text="Campo fumador" target="Rva_Hab_Fumador"/>
+		<indexitem text="Campo regimen" target="Rva_Hab_Regimen"/>
+	</indexitem>
+</index>

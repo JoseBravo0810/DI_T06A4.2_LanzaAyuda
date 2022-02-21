@@ -1,0 +1,331 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 6.4.7.2 (Linux)"/>
+	<meta name="created" content="2022-02-15T09:03:22.306482237"/>
+	<meta name="changed" content="2022-02-20T17:24:33.349951467"/>
+	<style type="text/css">
+		@page { size: 21cm 29.7cm; margin-left: 2cm; margin-right: 1cm; margin-top: 1cm; margin-bottom: 1cm }
+		p { margin-bottom: 0.25cm; background: transparent; line-height: 115%; background: transparent }
+		a:link { color: #000080; so-language: zxx; text-decoration: underline }
+	</style>
+</head>
+<body lang="es-ES" link="#000080" vlink="#800000" dir="ltr"><p><br/>
+<br/>
+
+</p>
+<p align="center" style="margin-top: 0.1cm; margin-bottom: 0.35cm"><font color="#666666"><font face="Bahnschrift Condensed, sans-serif"><font size="7" style="font-size: 36pt"><b>Base
+de Datos: </b></font></font></font>
+</p>
+<p align="center" style="margin-top: 0.1cm; margin-bottom: 0.35cm"><font color="#666666"><font face="Bahnschrift Condensed, sans-serif"><font size="7" style="font-size: 36pt"><b>Manual
+de administrador</b></font></font></font></p>
+<p align="center"><br/>
+<br/>
+
+</p>
+<p align="center" style="margin-left: 1.6cm; margin-right: 1.7cm; background: transparent; page-break-before: auto; page-break-after: auto">
+<font face="Alef"><font size="4" style="font-size: 14pt">En este
+manual trataremos aspectos técnicos de la Base de Datos empleada
+para almacenar los registros de los clientes.</font></font></p>
+<p align="center"><br/>
+<br/>
+
+</p>
+<p align="center"><font face="Alef"><font size="4" style="font-size: 15pt"><b>1.
+Creación</b></font></font> <font face="Alef"><font size="4" style="font-size: 15pt"><b>de</b></font></font>
+<font face="Alef"><font size="4" style="font-size: 15pt"><b>la Base
+de Datos</b></font></font></p>
+<p align="center" style="margin-left: 1.5cm; margin-right: 1.9cm; line-height: 115%; background: transparent; page-break-before: auto; page-break-after: auto">
+<font face="Alef"><font size="3" style="font-size: 12pt">La
+tecnología escogida para el almacenamiento persistente de la
+aplicación es el sistema gestor de bases de datos (SGBD) HSQLDB. La
+creación de la Base de Datos, se ha realizado desde la aplicación
+manager de HSQLDB. Para ejecutar este manager debemos ejecutar la
+siguiente linea desde un terminal:</font></font></p>
+<p align="center" style="margin-left: 1.5cm; margin-right: 1.9cm; line-height: 115%; background: transparent; page-break-before: auto; page-break-after: auto">
+<img src="../images/BD_Hotel_Admin_html_2c51b4efc6b8d844.gif" name="Objeto1" align="bottom" hspace="8" width="344" height="18" border="0"/>
+
+</p>
+<p align="center" style="margin-left: 1.5cm; margin-right: 1.9cm; line-height: 115%; background: transparent; page-break-before: auto; page-break-after: auto">
+<font face="Alef"><font size="3" style="font-size: 12pt">El paguete
+donde se encuentra el Manager es: org.hsqldb.util.DatabaseManager. Un
+ejemplo de ejecución sería:</font></font></p>
+<p align="center" style="margin-left: 1.5cm; margin-right: 1.7cm; background: transparent">
+<img src="../images/BD_Hotel_Admin_html_e52e9f75abd2e451.png" name="Imagen6" align="bottom" width="559" height="27" border="0"/>
+
+</p>
+<p align="center" style="margin-left: 1.5cm; margin-right: 1.7cm; background: transparent">
+<font face="Alef"><font size="3" style="font-size: 12pt">Al ejecutar
+la línea de código anterior se nos abrirá la siguiente ventana:</font></font></p>
+<p align="center" style="margin-left: 1.5cm; margin-right: 1.7cm; background: transparent">
+<img src="../images/BD_Hotel_Admin_html_3bcfa9ba34d618e.png" name="Imagen7" align="bottom" width="404" height="367" border="0"/>
+
+</p>
+<p align="center" style="margin-left: 1.5cm; margin-right: 1.7cm; background: transparent">
+<br/>
+<br/>
+
+</p>
+<p align="center" style="margin-left: 1.5cm; margin-right: 1.9cm; line-height: 115%; background: transparent; page-break-before: auto; page-break-after: auto">
+<font face="Alef"><font size="3" style="font-size: 12pt">En esta
+ventana se le dará nombre a la conexión para que el Manager la
+almacene y el siguiente acceso sea mucho más rápido. El tipo de
+conexión será Standalone. Se define el driver para conectarnos con
+la base de datos, en este caso se emplea el driver JDBC. En el campo
+URL se define la ruta donde se encuentra la BD, se debe tener en
+cuenta que si se define una ruta donde no hay ninguna base de datos,
+la creará. Finalmente se establecen las credenciales de acceso a la
+BD.</font></font></p>
+<p align="center" style="margin-left: 1.5cm; margin-right: 1.9cm; line-height: 115%; background: transparent; page-break-before: auto; page-break-after: auto">
+<font face="Alef"><font size="3" style="font-size: 12pt">Una vez
+creada la conexión se abrirá la siguiente ventana:</font></font></p>
+<p align="center" style="margin-left: 1.5cm; margin-right: 1.7cm; background: transparent">
+<img src="../images/BD_Hotel_Admin_html_55aadf0ffe8421e5.png" name="Imagen8" align="bottom" width="559" height="184" border="0"/>
+
+</p>
+<p align="center" style="margin-left: 1.5cm; margin-right: 1.7cm; background: transparent">
+<br/>
+<br/>
+
+</p>
+<p align="center" style="margin-left: 1.5cm; margin-right: 1.7cm; background: transparent">
+<br/>
+<br/>
+
+</p>
+<p align="center" style="margin-left: 1.5cm; margin-right: 1.9cm; line-height: 115%; background: transparent; page-break-before: auto; page-break-after: auto">
+<font face="Alef"><font size="3" style="font-size: 12pt">En el
+manager se puede ver la estructura de la BD, así como información
+adicional acerca de la BD en el árbol de la izquierda.</font></font></p>
+<p align="center" style="margin-left: 1.5cm; margin-right: 1.9cm; line-height: 115%; background: transparent; page-break-before: auto; page-break-after: auto">
+<font face="Alef"><font size="3" style="font-size: 12pt">Por otro
+lado, en la sección de la derecha se visualizan dos botones y un
+cuadro de texto en blanco. El botón “Clear” sirve para limpiar
+el campo de texto, en este campo de texto se introducen las
+sentencias SQL (se recomienda ejecutar las consultas de una en una),
+y las ejecutamos haciendo click en el botón “Execute”.</font></font></p>
+<p align="center" style="margin-left: 1.5cm; margin-right: 1.9cm; line-height: 115%; background: transparent; page-break-before: auto; page-break-after: auto">
+<font face="Alef"><font size="3" style="font-size: 12pt">Las
+sentencias SQL para crear las tablas, e insertar datos iniciales de
+la BD de la aplicación, se encuentran en el mismo proyecto en la
+ruta “PathApp/src/data/sentences. En esta ruta se pueden ver 4
+ficheros SQL (extensión .sql), uno por cada tabla creada en la BD.</font></font></p>
+<p align="center" style="margin-left: 1.5cm; margin-right: 1.7cm; background: transparent">
+<img src="../images/BD_Hotel_Admin_html_480a18328f7647af.png" name="Imagen9" align="bottom" width="440" height="258" border="0"/>
+
+</p>
+<p align="center" style="margin-left: 1.5cm; margin-right: 1.7cm; background: transparent">
+<br/>
+<br/>
+
+</p>
+<p align="center" style="margin-left: 1.5cm; margin-right: 1.7cm; background: transparent">
+<br/>
+<br/>
+
+</p>
+<p align="center" style="margin-left: 1.5cm; margin-right: 1.7cm; background: transparent">
+<font face="Alef"><font size="4" style="font-size: 15pt"><b>2.
+Lanzamiento del servicio de la BD</b></font></font></p>
+<p align="center" style="margin-left: 1.4cm; margin-right: 1.9cm; background: transparent; page-break-before: auto; page-break-after: auto">
+<font face="Alef"><font size="3" style="font-size: 12pt">Una vez
+creada la BD, para poder conectarse a la misma, será necesario
+lanzar el servicio para establecer el servidor de conexión a la BD.
+Para ello ejecutamos el siguiente comando desde una terminal:</font></font></p>
+<p align="center" style="margin-left: 1.4cm; margin-right: 1.9cm; margin-bottom: 0cm; line-height: 100%; background: transparent; page-break-before: auto; page-break-after: auto">
+<span style="font-variant: normal"><font face="Liberation Mono"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal">java
+-cp [ Ruta a hsqldb.jar ] [ Paquete de lanzador del servidor ]
+-database.0</span></span></font></font></span><span style="font-variant: normal">
+</span><span style="font-variant: normal"><font face="Liberation Mono, serif"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal">[
+Ruta absoluta de la BD ] -dbname.0 [ Nombre del servidor ]</span></span></font></font></span></p>
+<p align="center" style="margin-left: 1.4cm; margin-right: 1.9cm; margin-bottom: 0cm; line-height: 100%; background: transparent; page-break-before: auto; page-break-after: auto">
+<br/>
+
+</p>
+<p align="center" style="margin-left: 1.4cm; margin-right: 1.9cm; margin-bottom: 0cm; line-height: 100%; background: transparent; page-break-before: auto; page-break-after: auto">
+<font face="Alef"><font size="3" style="font-size: 12pt">Donde el
+paquete del lanzador del servicio será: org.hsqldb.Server, en
+-database.0 establecemos la ruta donde se encuentra la BD,</font></font>
+<font face="Alef"><font size="3" style="font-size: 12pt">y el nombre
+establecido será el que prefiera el usuario.</font></font></p>
+<p align="center" style="margin-left: 1.4cm; margin-right: 1.9cm; margin-bottom: 0cm; line-height: 100%; background: transparent; page-break-before: auto; page-break-after: auto">
+<font face="Alef"><font size="3" style="font-size: 12pt">Ejemplo de
+comando de lanzamiento del servidor:</font></font></p>
+<p align="center" style="margin-left: 1.5cm; margin-right: 1.7cm; margin-bottom: 0cm; line-height: 100%; background: transparent">
+<br/>
+
+</p>
+<p align="center" style="margin-left: 1.5cm; margin-right: 1.7cm; margin-bottom: 0cm; line-height: 100%; background: transparent">
+<img src="../images/BD_Hotel_Admin_html_2063894f7b04a13e.png" name="Imagen10" align="bottom" width="559" height="33" border="0"/>
+
+</p>
+<p align="center" style="margin-left: 1.5cm; margin-right: 1.7cm; margin-bottom: 0cm; line-height: 100%; background: transparent">
+<br/>
+
+</p>
+<p align="center" style="margin-left: 1.5cm; margin-right: 1.4cm; margin-bottom: 0cm; line-height: 100%; background: transparent; page-break-before: auto; page-break-after: auto">
+<font face="Alef"><font size="3" style="font-size: 12pt">Se deberá
+dejar abierta la terminal donde ejecutemos el comando, y para cerrar
+el servidor, se debe pulsar la combinación de teclas en la terminal
+Ctrl + C para finalizar el servicio.</font></font></p>
+<p align="center" style="margin-left: 1.5cm; margin-right: 1.7cm; background: transparent">
+<br/>
+<br/>
+
+</p>
+<p align="center" style="margin-left: 1.5cm; margin-right: 1.7cm; background: transparent">
+<br/>
+<br/>
+
+</p>
+<p align="center" style="margin-left: 1.5cm; margin-right: 1.7cm; background: transparent">
+<font face="Alef"><font size="4" style="font-size: 15pt"><b>3. Código
+de conexión con la BD</b></font></font></p>
+<p align="center" style="margin-left: 1.7cm; margin-right: 1.9cm; line-height: 115%; background: transparent; page-break-before: auto; page-break-after: auto">
+<font face="Alef"><font size="3" style="font-size: 12pt">La
+aplicación, en su método start(), el cual se ejecuta al inicio de
+la aplicación, ejecuta las siguientes lineas de código para
+conectar la aplicación con la Base de Datos: </font></font>
+</p>
+<p align="center" style="margin-left: 1.5cm; margin-right: 1.7cm; background: transparent">
+<img src="../images/BD_Hotel_Admin_html_2b6b92c25e1b81db.png" name="Imagen1" align="bottom" width="559" height="213" border="0"/>
+
+</p>
+<p align="center"><font face="Alef">Donde las variables empleadas
+serían de las clases:</font></p>
+<p align="center">→ <font face="Alef">emf: EntityManagerFactory</font></p>
+<p align="center">→ <font face="Alef">em: EntityManager</font></p>
+<p align="center">→ <font face="Alef">conexión: Connection</font></p>
+<p align="left"><br/>
+<br/>
+
+</p>
+<p align="center"><font face="Alef">Se realizan dos conexiones con la
+Base de Datos.</font></p>
+<p align="center" style="margin-left: 1.8cm; margin-right: 1.9cm; line-height: 115%; background: transparent; page-break-before: auto; page-break-after: auto">
+<font face="Alef">La primera, a través de la unidad de persistencia
+(persistence.xml → AppHotelPU) de la clase EntityManager, la cual
+permite la manipulación de registros de la BD a traves de las clases
+entidad de las cuales se hablará posteriormente en este mismo
+manual. Este fichero de persistencia está definido con el siguiente
+código XML:</font></p>
+<p align="center"><img src="../images/BD_Hotel_Admin_html_708eb5b53d2c7281.png" name="Imagen11" align="bottom" width="680" height="187" border="0"/>
+
+</p>
+<p align="center"><br/>
+<br/>
+
+</p>
+<p align="center"><font face="Alef">Y de forma gráfica:</font></p>
+<p align="center"><img src="../images/BD_Hotel_Admin_html_6a22caab1bfc490b.png" name="Imagen12" align="bottom" width="680" height="321" border="0"/>
+
+</p>
+<p align="center"><br/>
+<br/>
+
+</p>
+<p align="center"><br/>
+<br/>
+
+</p>
+<p align="center" style="margin-left: 1.7cm; margin-right: 1.9cm; line-height: 115%; background: transparent; page-break-before: auto; page-break-after: auto">
+<font face="Alef">La segunda se almacena en la variable conexión a
+través del método crearConnection(), el cual ejecuta las siguientes
+lineas de código:</font></p>
+<p align="center"><img src="../images/BD_Hotel_Admin_html_9c809a441ce15424.png" name="Imagen13" align="bottom" width="538" height="284" border="0"/>
+
+</p>
+<p align="center"><br/>
+<br/>
+
+</p>
+<p align="center"><br/>
+<br/>
+
+</p>
+<p align="center"><a name="__DdeLink__9_1940651027"></a><font face="Alef"><font size="4" style="font-size: 15pt"><b>4.
+Clases entidad</b></font></font></p>
+<p align="center" style="margin-left: 1.8cm; margin-right: 1.9cm; line-height: 115%; background: transparent; page-break-before: auto; page-break-after: auto">
+<font face="Alef"><font size="3" style="font-size: 12pt">En la ruta
+de la aplicación /<span style="font-variant: normal"><span style="font-style: normal">scr</span></span><i>/</i><span style="font-variant: normal"><span style="font-style: normal">data/entities,
+encontramos las clases entidad, las cuales sirven para manipular los
+registros de la base de datos. Estas clases entidad permiten extraer
+registros de la BD en forma de objetos manipulables desde la
+aplicación (manipulación mediante código). Si se fija en estas
+clases, podrá ver que realiza el mapeo de los campos de cada
+registro a través de las anotaciones JPA (JPA Annotations).</span></span></font></font></p>
+<p align="center" style="margin-left: 1.8cm; margin-right: 1.9cm; margin-bottom: 0cm; line-height: 115%; background: transparent; page-break-before: auto; page-break-after: auto">
+<font face="Alef"><font size="3" style="font-size: 12pt">Se
+recomienda no modificar estas clases, ya que cualquier modificación
+de estas clases puede suponer un error fatal en el funcionamiento de
+la aplicación.</font></font></p>
+<p align="center" style="margin-left: 1.8cm; margin-right: 1.9cm; margin-bottom: 0cm; line-height: 115%; background: transparent; page-break-before: auto; page-break-after: auto">
+<font face="Alef"><font size="3" style="font-size: 12pt">También se
+recomienda ver estas clases para saber los métodos que se pueden
+emplear para manipular los registros desde código. Se debe tener en
+cuenta que estos métodos son utilizados en las clases Clientes.java,
+Habana.java y Habitaciones.java. Cualquier modificación de estas
+clases correrá a cuenta y riesgo del administrador que lo modifique,
+no se garantiza la consistencia de la aplicación una vez modificadas
+estas clases.</font></font></p>
+<p align="center" style="margin-bottom: 0cm"><br/>
+
+</p>
+<p align="center" style="margin-bottom: 0cm"><img src="../images/BD_Hotel_Admin_html_867821416ed6efba.png" name="Imagen2" align="bottom" width="413" height="252" border="0"/>
+
+</p>
+<p align="center" style="margin-bottom: 0cm"><br/>
+
+</p>
+<p align="center"><br/>
+<br/>
+
+</p>
+<p align="center"><br/>
+<br/>
+
+</p>
+<p align="center"><font face="Alef"><font size="4" style="font-size: 15pt"><b>5.
+Manuales oficiales (Oracle y Derby)</b></font></font></p>
+<p align="center" style="margin-left: 2cm; margin-right: 1.9cm; line-height: 115%; background: transparent; page-break-before: auto; page-break-after: auto">
+<font face="Alef"><font size="3" style="font-size: 12pt">Para saber
+más acerca del funcionamiento de la metodología utilizada deberá
+dirigirse a los siguientes manuales de las tecnologías empleadas
+para la creación de la BD.</font></font></p>
+<p align="center" style="margin-left: 1.6cm; margin-right: 1.7cm; background: transparent">
+<font face="Alef"><font size="3" style="font-size: 12pt">API
+persistence Oracle → <a href="https://docs.oracle.com/javaee/7/api/javax/persistence/package-summary.html">javax.persistence</a>.</font></font></p>
+<p align="center" style="margin-left: 1.6cm; margin-right: 1.7cm; background: transparent">
+<font face="Alef"><font size="3" style="font-size: 12pt">HSQLDB</font></font>
+→ <font face="Alef"><font size="3" style="font-size: 12pt"><a href="http://hsqldb.org/">Documentation</a>.</font></font></p>
+<p align="center" style="margin-left: 1.6cm; margin-right: 1.7cm; background: transparent">
+<br/>
+<br/>
+
+</p>
+<p align="center"><br/>
+<br/>
+
+</p>
+<p align="center"><font face="Alef"><font size="4" style="font-size: 15pt"><b>6.
+Contacto con desarrolladores.</b></font></font></p>
+<p align="center" style="margin-left: 1.5cm; margin-right: 1.8cm; background: transparent; page-break-before: auto; page-break-after: auto">
+<font face="Alef"><font size="3" style="font-size: 12pt">Si la
+problemática persiste, se recomienda ponerse en contacto con los
+desarrolladores de la aplicación.</font></font></p>
+<p align="center"><font face="Alef"><font size="3" style="font-size: 12pt">Antonio
+Medina Maldonado→ <a href="mailto:antoniomedina281@gmail.com?subject=Error%20AppHotel">antoniomedina281@gmail.com</a>.</font></font></p>
+<p align="center"><font face="Alef"><font size="3" style="font-size: 12pt">Damian
+Hermida Ramos → <a href="mailto:damian.hermida.ramoss@gmail.com?subject=Error%20AppHotel">damian.hermida.ramoss@gmail.com</a>.</font></font></p>
+<p align="center"><font face="Alef"><font size="3" style="font-size: 12pt">Francisco
+García Domínguez→ <a href="mailto:franciscojose.garciadominguez@gmail.com?subject=Error%20AppHotel">franciscojose.garciadominguez@gmail.com</a>.</font></font></p>
+<p align="center"><font face="Alef"><font size="3" style="font-size: 12pt">José
+Bravo Castillo → <a href="mailto:jobravcas@gmail.com">jobravcas@gmail.com</a>.</font></font></p>
+<p align="center"><br/>
+<br/>
+
+</p>
+</body>
+</html>

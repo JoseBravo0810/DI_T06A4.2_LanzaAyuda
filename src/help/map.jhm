@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<!DOCTYPE map PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp Map Version 2.0//EN" "http://java.sun.com/products/javahelp/map_2_0.dtd">
+<map version="2.0">
+	<mapID target="init" url="fuentes/TopicGeneral.html"/>
+	<mapID target="BD_User" url="fuentes/BD_Hotel_Usuario.html"/>
+	<mapID target="BD_Admin" url="fuentes/BD_Hotel_Admin.html"/>
+	<mapID target="Rva_Hab" url="fuentes/Reserva_Hab.html"/>
+	<mapID target="Rva_Hab_DNI" url="fuentes/Reserva_Hab_DNI.html"/>
+	<mapID target="Rva_Hab_Nombre" url="fuentes/Reserva_Hab_Nombre.html"/>
+	<mapID target="Rva_Hab_Direccion" url="fuentes/Reserva_Hab_Direccion.html"/>
+	<mapID target="Rva_Hab_Localidad" url="fuentes/Reserva_Hab_Localidad.html"/>
+	<mapID target="Rva_Hab_Provincia" url="fuentes/Reserva_Hab_Provincia.html"/>
+	<mapID target="Rva_Hab_F_Llegada" url="fuentes/Reserva_Hab_Fecha_Llegada.html"/>
+	<mapID target="Rva_Hab_F_Salida" url="fuentes/Reserva_Hab_Fecha_Salida.html"/>
+	<mapID target="Rva_Hab_Num_Hab" url="fuentes/Reserva_Hab_Num_Hab.html"/>
+	<mapID target="Rva_Hab_Tipo_Hab" url="fuentes/Reserva_Hab_Tipo_Hab.html"/>
+	<mapID target="Rva_Hab_Fumador" url="fuentes/Reserva_Hab_Fumador.html"/>
+	<mapID target="Rva_Hab_Regimen" url="fuentes/Reserva_Hab_Regimen.html"/>
+</map>
